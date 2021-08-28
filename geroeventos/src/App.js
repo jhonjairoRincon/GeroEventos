@@ -1,12 +1,19 @@
-import Lodingpage from './pages/Lodingpage'
+import Main from './pages/Main'
+import {ThemeProvider} from '@material-ui/core/styles'
+import theme from './ThemeConfig'
+
+
+
 
 
 function App() {
   
   return (
-    <div className="App">
-      <Lodingpage/>
-    </div>
+    <ThemeProvider theme={theme} >
+       
+        <Main/>
+       
+    </ThemeProvider>
   );
 }
 
